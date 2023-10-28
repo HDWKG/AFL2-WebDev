@@ -33,11 +33,7 @@
                                 0706012210034 John Doe <!-- Replace with the user's name -->
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="usernameDropdown">
-                                <li><a class="dropdown-item" href="#">Dashboard</a></li>
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Grades</a></li>
-                                <li><a class="dropdown-item" href="#">Messages</a></li>
-                                <li><a class="dropdown-item" href="#">Preferences</a></li>
+                                <li><a class="dropdown-item" href="/userProfile">Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Log out</a></li>
                             </ul>
                         </div>
