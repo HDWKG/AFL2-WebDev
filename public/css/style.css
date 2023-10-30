@@ -1,0 +1,73 @@
+.nav-item a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+.nav-item a:not(.active-link) {
+    color: white;
+}
+
+.active-link {
+    font-weight: bold;
+    color: orange;
+}
+
+.nav-item a:hover {
+    color: orange;
+}
+
+.btn-orange {
+    background-color: orange;
+    border-radius: 20px;
+    padding: 7px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+body {
+    background: black;
+}
+.frame-title {
+    color: white;
+}
+.frame-desc{
+    color: white;
+    font-size: 15px;
+    max-width: 600px;
+}
+.btn-orange:hover {
+    background-color: indianred; /* You can keep the background color the same or change it if desired */
+    color: black; /* Change the text color to orange on hover */
+}
+.btn-orange:active {
+    background-color: indianred !important;
+    color: black !important;
+}
+.frame-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frame-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.frame-image {
+    flex: 1;
+    text-align: right;
+}
+
+.frame-image img {
+    max-width: 80%;
+}
+

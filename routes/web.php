@@ -14,12 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', [
+        "title" => "Home",
+    ]);
 });
-
-Route::get(
-    '/userProfile',
-    function () {
-        return view('userProfile');
-    }
-);
+Route::get('/about', function () {
+    return view('about', [
+        "title" => "About Us",
+    ]);
+});
+Route::get('/menu', function () {
+    return view('menu', [
+        "title" => "Our Menu",
+    ]);
+});
+Route::get('/book', function () {
+    return view('book', [
+        "title" => "Book Now!",
+    ]);
+});
