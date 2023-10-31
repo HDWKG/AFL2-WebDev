@@ -73,7 +73,7 @@ body {
 .container {
     padding: 2rem;
 }
-.slider{
+.slider {
     width: 800px;
     max-width: 100vw;
     height: 400px;
@@ -81,9 +81,9 @@ body {
     position: relative;
     overflow: hidden;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-	border-radius: 0.5rem;
+    border-radius: 0.5rem;
 }
-.slider .list{
+.slider .list {
     position: absolute;
     width: max-content;
     height: 100%;
@@ -92,14 +92,14 @@ body {
     display: flex;
     transition: 1s;
 }
-.slider .list img{
+.slider .list img {
     width: 800px;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.slider .buttons{
+.slider .buttons {
     position: absolute;
     top: 45%;
     left: 5%;
@@ -107,7 +107,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.slider .buttons button{
+.slider .buttons button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -117,7 +117,7 @@ body {
     font-family: monospace;
     font-weight: bold;
 }
-.slider .dots{
+.slider .dots {
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -128,7 +128,7 @@ body {
     display: flex;
     justify-content: center;
 }
-.slider .dots li{
+.slider .dots li {
     list-style: none;
     width: 10px;
     height: 10px;
@@ -137,12 +137,70 @@ body {
     border-radius: 20px;
     transition: 0.5s;
 }
-.slider .dots li.active{
+.slider .dots li.active {
     width: 30px;
 }
 
-@media screen and (max-width: 768px){
-    .slider{
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+.heading span {
+    color: red;
+}
+.specialty .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.specialty .box-container .box {
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.specialty .box-container .box .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: top 0.3s;
+}
+.specialty .box-container .box .content {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+.specialty .box-container .box .content img {
+    margin: 1.5rem 0;
+    width: 100px;
+    height: 100px;
+}
+.specialty .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+.specialty .box-container .box .content p {
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0 ;
+}
+.specialty .box-container .box:hover .image{
+    top:0;
+}
+.specialty .box-container .box:hover .content{
+    transform: translateY(100%);
+}
+@media screen and (max-width: 768px) {
+    .slider {
         height: 200px;
     }
 }
