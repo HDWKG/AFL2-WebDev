@@ -10,22 +10,22 @@
         <div class="slider">
             <div class="list">
                 <div class="item">
-                    <img src="https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
+                    <img src="https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534-600x401.jpg"
                         alt="">
                 </div>
                 <div class="item">
-                    <img src="https://images.unsplash.com/photo-1657586640569-4a3d4577328c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
+                    <img src="https://asset.kompas.com/crops/iLg1PRguXM692DZeqW4X3CDNvt8=/0x0:1000x667/1200x800/data/photo/2020/04/13/5e940a05bb389.jpg"
                         alt="">
                 </div>
                 <div class="item">
-                    <img src="https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
+                    <img src="https://akcdn.detik.net.id/visual/2014/12/03/f445a8dc-be6c-48bb-abfc-58f6df3c56a6_169.jpg?w=650"
                         alt="">
                 </div>
                 <div class="item">
-                    <img src="img/4.jpg" alt="">
+                    <img src="https://image.makewebeasy.net/makeweb/m_1920x0/rGAbosWut/DefaultData/AGS_0539_min.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="img/5.jpg" alt="">
+                    <img src="https://www.bhg.com/thmb/ARwlwRFvxK4g-TYSKLiuDy3y8T4=/4000x0/filters:no_upscale():strip_icc()/bhg-recipe-cookies-food-processor-chocolate-chip-cookies-Hero-01-5b0c046d2a3d4328b52b28f2a5135c8b.jpg" alt="">
                 </div>
             </div>
             <div class="buttons">
@@ -114,6 +114,48 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam harum consequatur, consectetur
                         officia dolorem ipsam! Facere beatae tenetur doloribus vitae.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h1 class="heading"> Our Customers <span>Reviews</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://www.wilsoncenter.org/sites/default/files/media/images/person/james-person-1.jpg" alt="">
+                <h3>John DOe</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, minima?</p>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="">
+                <h3>Jane Smith</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, minima?</p>
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg" alt="">
+                <h3>Daniel Fernando</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, minima?</p>
             </div>
         </div>
     </section>
