@@ -49,6 +49,20 @@
     <div class="container p-4">
         {{ $slot }}
     </div>
+    <footer>
+        <hr style="border: 1px solid white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Contact Us</h4>
+                    <p>If you have any question or feedback, feel free to contact us.</p>
+                    <p>Email: contact@example.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: Examp Street No.111, Example City (1234560) </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjvP/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
