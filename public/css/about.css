@@ -31,3 +31,50 @@ body {
     margin-left: 20px;
     color: #555;
 }
+
+.expand-button div {
+    position: relative;
+    vertical-align: top;
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    transition: 200ms ease-in-out all;
+    line-height: 0;
+    cursor: pointer;
+  }
+    
+  .expand-button div:focus {
+    line-height: 1.2;
+    outline: none;
+  }
+  
+  .expand-button div:after {
+   width: 100%;
+   text-align: center;
+   position: relative;
+   display: block;
+   content: "Expand on focus"
+  }
+  
+  .expand-button div:focus:before {
+    opacity: 0;
+  }
+  
+  .expand-button div:focus span {
+    animation: 2s show;
+    opacity: 1;  
+  }
+  
+  .expand-button div span {
+    opacity: 0;
+    font-size: 12px;              
+  }
+  
+  .expand-button div:focus:after {
+    display: none;
+  }
+  
+  @keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }

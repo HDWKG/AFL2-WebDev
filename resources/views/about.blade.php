@@ -21,7 +21,7 @@
                 not only satisfies hunger but also ignites the senses. What began as a small food stall in a bustling
                 corner of the city has grown into a culinary empire known for redefining the fast food experience.</p>
             <div class="expand-button">
-                <span>Our commitment to excellence has remained steadfast throughout our
+                <div tabindex="0"><span>Our commitment to excellence has remained steadfast throughout our
                         journey. We have meticulously crafted a menu that combines classic favorites with innovative
                         creations, ensuring that
                         every bite is a culinary revelation. We take pride in using only the finest and freshest
@@ -43,37 +43,47 @@
                         a shared meal.Fast Food Delight is more than a culinary destination; it's a
                         reflection of our love for food and the people we serve. We invite you to join us on this
                         gastronomic journey, where every visit promises a delightful experience, and every dish tells a
-                        story of our dedication to culinary artistry.</span>
+                        story of our dedication to culinary artistry.</span></div>
             </div>
 
             <h2 class="about-subheading">Our Values</h2>
-            <p class="about-p">At the heart of our success lies a set of core values that define who we are and guide
+            <p class="about-p">At the heart of our success lies a set of core values that define who we are and
+                guide
                 everything we do:</p>
             <ul class="about-list about-p">
-                <li><strong>Quality Excellence:</strong> We are committed to sourcing the highest-quality ingredients,
+                <li><strong>Quality Excellence:</strong> We are committed to sourcing the highest-quality
+                    ingredients,
                     ensuring that every dish is a masterpiece of taste and texture.</li>
-                <li><strong>Exceptional Service:</strong> Our friendly and efficient team is dedicated to making your
+                <li><strong>Exceptional Service:</strong> Our friendly and efficient team is dedicated to making
+                    your
                     visit a delight, ensuring your needs are met with a warm smile and prompt service.</li>
                 <li><strong>Clean and Comfortable:</strong> We take great care in maintaining clean and comfortable
                     dining environments, creating a welcoming space for you to enjoy your meal.</li>
-                <li><strong>Community Engagement:</strong> We believe in giving back to the communities that support us.
-                    We actively engage in initiatives that make a positive impact and foster a sense of togetherness.
+                <li><strong>Community Engagement:</strong> We believe in giving back to the communities that support
+                    us.
+                    We actively engage in initiatives that make a positive impact and foster a sense of
+                    togetherness.
                 </li>
             </ul>
 
             <h2 class="about-subheading">Our Commitment</h2>
-            <p class="about-p">Fast Food Delight is more than just a place to eat; it's a promise to our customers. Our
+            <p class="about-p">Fast Food Delight is more than just a place to eat; it's a promise to our customers.
+                Our
                 commitment is to continually enhance your dining experience. We are dedicated to exploring new and
                 exciting flavors, creating innovative menu items, and staying ahead of culinary trends. We take your
                 feedback seriously, and it motivates us to evolve and adapt to meet your evolving tastes and
                 preferences.</p>
 
-            <p class="about-p">In addition to our culinary commitment, we hold a strong commitment to our communities.
-                We believe in being a responsible corporate citizen, supporting local causes, and fostering a sense of
-                belonging. We are proud to be a part of the fabric of your community, and we are dedicated to making it
+            <p class="about-p">In addition to our culinary commitment, we hold a strong commitment to our
+                communities.
+                We believe in being a responsible corporate citizen, supporting local causes, and fostering a sense
+                of
+                belonging. We are proud to be a part of the fabric of your community, and we are dedicated to making
+                it
                 a better place for all.</p>
 
-            <p class="about-p">Thank you for being a part of the Fast Food Delight family. We look forward to serving
+            <p class="about-p">Thank you for being a part of the Fast Food Delight family. We look forward to
+                serving
                 you not just a meal, but an experience. Join us as we continue to delight your senses and make every
                 visit a memorable moment in your culinary journey.</p>
         </div>
