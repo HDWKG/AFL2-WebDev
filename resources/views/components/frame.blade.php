@@ -13,13 +13,13 @@
     <style>
         ::-webkit-scrollbar {
             width: 1em;
-            background: transparent;
+            border-radius: 2em;
         }
 
         ::-webkit-scrollbar-track {
-            background: transparent;
+            background: indianred;
             margin-block: .5em;
-            border-radius: 5em;
+            border-radius: 2em;
         }
 
         ::-webkit-scrollbar-thumb {
@@ -29,11 +29,11 @@
 
         ::-webkit-scrollbar-thumb {
             background: rgba(255, 0, 0, 75%);
-            border-radius: 5em;
+            border-radius: 2em;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 0, 0, 100%);
+            background: rgba(235, 0, 0, 100%);
             background-size: cover;
         }
     </style>
