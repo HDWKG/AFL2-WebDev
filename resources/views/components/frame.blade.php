@@ -4,7 +4,7 @@
 <head>
     <title>{{ $title ?? 'PageTitle' }}</title>
     <link rel="icon"
-        href="https://media.istockphoto.com/id/825383494/photo/business-man-pushing-large-stone-up-to-hill-business-heavy-tasks-and-problems-concept.jpg?s=612x612&w=0&k=20&c=wtqvbQ6OIHitRVDPTtoT_1HKUAOgyqa7YzzTMXqGRaQ="
+        href="https://static.vecteezy.com/system/resources/previews/008/480/737/original/burger-icon-simple-colored-burger-icon-fast-food-logo-free-png.png"
         type="image/icon type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,36 +17,43 @@
         <div class="row align-items-center">
             <div class="col-2">
                 <a href="/">
-                    <img src="https://media.istockphoto.com/id/825383494/photo/business-man-pushing-large-stone-up-to-hill-business-heavy-tasks-and-problems-concept.jpg?s=612x612&w=0&k=20&c=wtqvbQ6OIHitRVDPTtoT_1HKUAOgyqa7YzzTMXqGRaQ="
-                        alt="Logo Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    <div class="logo-container">
+                        <img src="https://static.vecteezy.com/system/resources/previews/008/480/737/original/burger-icon-simple-colored-burger-icon-fast-food-logo-free-png.png"
+                            alt="Logo Picture" class="logo" />
                 </a>
-            </div>
-            <div class="col-6 text-center">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->is('/') ? 'active-link' : '' }}" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->is('about') ? 'active-link' : '' }}" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->is('menu') ? 'active-link' : '' }}" href="/menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->is('book') ? 'active-link' : '' }}" href="/book">Book Now</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-4 d-flex justify-content-end">
-                <a href="#" class="icon-link" id="search-icon">
-                    <i class="fas fa-search"></i>
-                </a>
-                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
-                <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="btn btn-primary btn-orange">Order Online</a>
+                <div class="name">
+                    <h3>Fast Delight</h3>
+                </div>
             </div>
         </div>
-        <hr style="border: 1px solid white;">
+
+
+        <div class="col-6 text-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->is('/') ? 'active-link' : '' }}" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->is('about') ? 'active-link' : '' }}" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->is('menu') ? 'active-link' : '' }}" href="/menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->is('book') ? 'active-link' : '' }}" href="/book">Book Now</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+            <a href="#" class="icon-link" id="search-icon">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+            <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="btn btn-primary btn-orange">Order Online</a>
+        </div>
+    </div>
+    <hr style="border: 1px solid white;">
     </div>
     <div class="container p-4">
         {{ $slot }}
@@ -96,7 +103,16 @@
             </div>
         </div>
     </footer>
-
+    <a href="#" class="fas fa-angle-up" id="scroll-top"></a>
+    <script>
+        window.onscroll = () => {
+            if (window.scrollY > 60) {
+                document.querySelector('#scroll-top').classList.add('active');
+            } else {
+                document.querySelector('#scroll-top').classList.remove('active');
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjvP/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>

@@ -1,4 +1,8 @@
 <x-frame>
+    <x-slot:layout_image>
+    </x-slot:layout_image>
+    <x-slot:slot_about>
+    </x-slot:slot_about>
     <x-slot:title>
         {{$title}}
     </x-slot:title>

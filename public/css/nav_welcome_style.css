@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+.col-2 {
+    display: flex;
+    align-items: center;
+}
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.name {
+    margin-top: 7px;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    align-self: center;
+    font-family: "Dancing Script", sans-serif;
+}
 .nav-item a {
     text-decoration: none;
     font-size: 18px;
@@ -146,6 +172,7 @@ body {
 }
 .slider .dots li.active {
     width: 30px;
+    background-color: red;
 }
 
 .heading {
@@ -279,7 +306,23 @@ body {
     color: #24262b;
     background-color: #ffffff;
 }
+#scroll-top {
+    position: fixed;
+    top: -120%;
+    transition: .5s linear;
+    right: 2rem;
+    padding: .5rem .5rem;
+    font-size: 2rem;
+    background: red;
+    color: #fff;
+    border-radius: 0.5rem;
+    z-index: 1000;
+    text-decoration: none;
+}
 
+#scroll-top.active {
+    top: calc(100% - 8rem);
+}
 @media (max-width: 767px) {
     .footer-col {
         width: 50%;
