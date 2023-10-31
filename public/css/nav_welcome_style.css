@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 .nav-item a {
     text-decoration: none;
     font-size: 18px;
@@ -11,15 +13,16 @@
 
 .active-link {
     font-weight: bold;
-    color: orange;
+    color: red;
 }
 
 .nav-item a:hover {
-    color: orange;
+    color: red;
 }
 
 .btn-orange {
-    background-color: orange;
+    border-color: red;
+    background-color: transparent;
     border-radius: 20px;
     padding: 7px 30px;
     color: black;
@@ -34,6 +37,8 @@
 
 body {
     background: white;
+    line-height: 1.1;
+    font-family: "Poppins", sans-serif;
 }
 .frame-title {
     color: black;
@@ -44,12 +49,14 @@ body {
     max-width: 600px;
 }
 .btn-orange:hover {
-    background-color: indianred; /* You can keep the background color the same or change it if desired */
-    color: black; /* Change the text color to orange on hover */
+    background-color: red;
+    color: white;
+    border-color: red;
 }
 .btn-orange:active {
     background-color: indianred !important;
-    color: black !important;
+    color: white !important;
+    border-color: indianred !important;
 }
 .frame-content {
     display: flex;
@@ -156,7 +163,7 @@ body {
     gap: 1.5rem;
 }
 .specialty .box-container .box {
-    flex: 1 1 30rem;
+    flex: 1 1 25rem;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -191,16 +198,96 @@ body {
 .specialty .box-container .box .content p {
     font-size: 1.6rem;
     color: #666;
-    padding: 1rem 0 ;
+    padding: 1rem 0;
 }
-.specialty .box-container .box:hover .image{
-    top:0;
+.specialty .box-container .box:hover .image {
+    top: 0;
 }
-.specialty .box-container .box:hover .content{
+.specialty .box-container .box:hover .content {
     transform: translateY(100%);
 }
 @media screen and (max-width: 768px) {
     .slider {
         height: 200px;
+    }
+}
+.footer .container {
+    max-width: 1200px;
+    margin: auto;
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    background-color: #24262b;
+    padding: 5px 0;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 4px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
     }
 }
