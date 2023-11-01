@@ -10,6 +10,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/nav_welcome_style.css') }}">
+    <style>
+        ::-webkit-scrollbar {
+            width: 1em;
+            border-radius: 2em;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+            margin-block: .5em;
+            border-radius: 2em;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-image: url("https://i.pinimg.com/originals/47/54/32/475432e58b578f20c84931371ec5c65f.png");
+            background-size: cover;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 0, 0, 75%);
+            border-radius: 2em;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(235, 0, 0, 100%);
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +49,7 @@
                             alt="Logo Picture" class="logo" />
                 </a>
                 <div class="name">
-                    <h3>Fast Delight</h3>
+                    <h3 class="company-name">Fast Delight</h3>
                 </div>
             </div>
         </div>
