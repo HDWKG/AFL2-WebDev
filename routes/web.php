@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,13 +24,13 @@ Route::get('/about', function () {
         "title" => "About Us",
     ]);
 });
-Route::get('/menu', function () {
-    return view('menu', [
-        "title" => "Our Menu",
-    ]);
-});
+
+Route::get("/menu", [ProductController::class, "returnProduct"])->name("");
+Route::get('/menuDetails/{id}', [ProductController::class, 'show'])->name('viewProduct');
+
 Route::get('/book', function () {
     return view('book', [
         "title" => "Book Now!",
     ]);
 });
+// Route::get('/viewDetails/{id}', [StudentController::class, 'show'])->name('viewStudent');
