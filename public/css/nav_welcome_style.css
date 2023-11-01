@@ -4,7 +4,16 @@
     display: flex;
     align-items: center;
 }
-
+.company-name{
+    margin-top: 7px!important;
+    margin-bottom: 7px!important;
+    font-size: 24px!important;
+    font-weight: normal!important;
+    color: black;
+    text-align: center;
+    align-self: center;
+    font-family: "Dancing Script", sans-serif;
+}
 .logo-container {
     display: flex;
     align-items: center;
@@ -18,14 +27,6 @@
     margin-right: 10px;
 }
 
-.name {
-    margin-top: 7px;
-    font-size: 24px;
-    color: black;
-    text-align: center;
-    align-self: center;
-    font-family: "Dancing Script", sans-serif;
-}
 .nav-item a {
     text-decoration: none;
     font-size: 18px;

@@ -49,7 +49,7 @@
                             alt="Logo Picture" class="logo" />
                 </a>
                 <div class="name">
-                    <h3>Fast Delight</h3>
+                    <h3 class="company-name">Fast Delight</h3>
                 </div>
             </div>
         </div>
