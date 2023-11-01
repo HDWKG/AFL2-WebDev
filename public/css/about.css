@@ -26,6 +26,14 @@ body {
     letter-spacing: 1.1px;
 }
 
+.about-p1{
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 1.1px;
+}
+
 .about-list {
     list-style: disc;
     margin-left: 20px;
@@ -35,16 +43,21 @@ body {
 .expand-button div {
     position: relative;
     vertical-align: top;
+    margin-top: -30px;
     list-style: none;
     display: inline-block;
-    margin: 20px;
     transition: 200ms ease-in-out all;
     line-height: 0;
     cursor: pointer;
   }
     
   .expand-button div:focus {
-    line-height: 1.2;
+    font-size: 18px;
+    margin-top: -5px;
+    color: #555;
+    text-align: justify;
+    letter-spacing: 1.1px;
+    line-height: 1.5;
     outline: none;
   }
   
@@ -53,7 +66,7 @@ body {
    text-align: center;
    position: relative;
    display: block;
-   content: "Expand on focus"
+   content: "Click to Expand"
   }
   
   .expand-button div:focus:before {
@@ -66,8 +79,7 @@ body {
   }
   
   .expand-button div span {
-    opacity: 0;
-    font-size: 12px;              
+    opacity: 0;          
   }
   
   .expand-button div:focus:after {
@@ -77,4 +89,38 @@ body {
   @keyframes show {
     0% {opacity: 0;}
     100% {opacity: 1;}
+  }
+
+  section,
+  section:before,
+  section:after {
+    box-sizing: border-box;
+    position: relative;
+    letter-spacing: 0.04em;
+  }
+
+  .revealUp {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .spacer {
+    height: 50vh;
+    background-color: #000;
+  }
+
+  .section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg1 {
+    background-color: #ccc;
   }
