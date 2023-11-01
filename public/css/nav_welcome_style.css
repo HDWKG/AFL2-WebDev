@@ -363,6 +363,9 @@ body {
 #scroll-top.active {
     top: calc(100% - 8rem);
 }
+.spec{
+    text-decoration: none;
+}
 @media (max-width: 767px) {
     .footer-col {
         width: 50%;

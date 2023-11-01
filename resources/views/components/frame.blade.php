@@ -17,7 +17,7 @@
         }
 
         ::-webkit-scrollbar-track {
-            background: indianred;
+            background: transparent;
             margin-block: .5em;
             border-radius: 2em;
         }
