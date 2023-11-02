@@ -40,13 +40,20 @@ body {
     color: #555;
 }
 
+.about-list li {
+  margin-bottom: 20px; /* Jarak antara setiap item dalam daftar */
+  border-bottom: 1px solid #ccc; /* Sekat antara setiap item dalam daftar */
+  padding-bottom: 10px; /* Jarak antara teks item dan sekat */
+}
+
+
 .expand-button div {
     position: relative;
     vertical-align: top;
     margin-top: -30px;
     list-style: none;
     display: inline-block;
-    transition: 200ms ease-in-out all;
+    transition: 500ms ease-in-out all;
     line-height: 0;
     cursor: pointer;
   }
@@ -89,38 +96,4 @@ body {
   @keyframes show {
     0% {opacity: 0;}
     100% {opacity: 1;}
-  }
-
-  section,
-  section:before,
-  section:after {
-    box-sizing: border-box;
-    position: relative;
-    letter-spacing: 0.04em;
-  }
-
-  .revealUp {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .spacer {
-    height: 50vh;
-    background-color: #000;
-  }
-
-  .section {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    padding: 0;
-    text-align: center;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bg1 {
-    background-color: #ccc;
   }
