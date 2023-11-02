@@ -185,6 +185,5 @@
             @endforeach
         </div>
     </section>
-    <script defrer src="{{asset('js/menu.js')}}">
-
+    <script defrer src="{{asset('js/menu.js')}}"></script>
 </x-frame>

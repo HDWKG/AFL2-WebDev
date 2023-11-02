@@ -4,11 +4,11 @@
     display: flex;
     align-items: center;
 }
-.company-name{
-    margin-top: 7px!important;
-    margin-bottom: 7px!important;
-    font-size: 24px!important;
-    font-weight: normal!important;
+.company-name {
+    margin-top: 7px !important;
+    margin-bottom: 7px !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
     color: black;
     text-align: center;
     align-self: center;
@@ -55,7 +55,16 @@
     color: black;
     text-decoration: none;
 }
-
+.btn-orange:hover {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+.btn-orange:active {
+    background-color: indianred !important;
+    color: white !important;
+    border-color: indianred !important;
+}
 .icon-link {
     text-decoration: none;
     color: black;
@@ -74,16 +83,6 @@ body {
     color: black;
     font-size: 15px;
     max-width: 600px;
-}
-.btn-orange:hover {
-    background-color: red;
-    color: white;
-    border-color: red;
-}
-.btn-orange:active {
-    background-color: indianred !important;
-    color: white !important;
-    border-color: indianred !important;
 }
 .frame-content {
     display: flex;
@@ -113,7 +112,7 @@ body {
     height: 400px;
     margin: auto;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
 }
@@ -240,28 +239,32 @@ body {
         height: 200px;
     }
 }
-.footer .container {
-    max-width: 1200px;
-    margin: auto;
-}
+
 .footer .row {
     display: flex;
     flex-wrap: wrap;
 }
 .footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
     background-color: #24262b;
     padding: 5px 0;
+}
+
+.footer .container {
+    padding-bottom: 20px;
 }
 .footer-col {
     width: 25%;
     padding: 0 15px;
 }
 .footer-col h4 {
-    font-size: 18px;
+    font-size: 18px !important;
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
+    margin-bottom: 35px !important;
+    font-weight: 500 !important;
     position: relative;
 }
 .footer-col h4::before {
@@ -275,7 +278,7 @@ body {
     width: 50px;
 }
 .footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 .footer-col ul li a {
     font-size: 16px;
@@ -364,7 +367,7 @@ body {
 #scroll-top.active {
     top: calc(100% - 8rem);
 }
-.spec{
+.spec {
     text-decoration: none;
 }
 @media (max-width: 767px) {
