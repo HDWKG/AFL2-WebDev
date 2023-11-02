@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 
-        <div data-aos="fade-up" data-aos-duration="2000">
+        <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="about-heading">About Us</h1>
         <p class="about-p1">Fast Food Delight welcomes you to a world where culinary excellence meets the
             convenience
