@@ -26,7 +26,7 @@ body {
     letter-spacing: 1.1px;
 }
 
-.about-p1{
+.about-p1 {
     font-size: 18px;
     color: #555;
     margin-top: 15px;
@@ -35,40 +35,60 @@ body {
 }
 
 .about-list p {
-  display: inline-block;
-  
-  box-sizing: border-box;
-  padding: 10px;
-  margin: 10px;
-  min-height: 100px;
-  vertical-align: top;
-  text-align: center;
-}
+    display: inline-block;
 
-.about-list{
-  height: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    min-height: 100px;
+    vertical-align: top;
+    text-align: center;
 }
-
+.about-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+}
 .card-body {
-  text-align: center;
-  height: 250px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Media query untuk tampilan di laptop L */
+.hidden{
+  transform: translateX(-100%);
+  opacity: 0; 
+  filter: blur(5px);
+  transition: transform 1s, opacity 1s;
+}
+.hidden:nth-child(3){
+  transition-delay: 200ms;
+}
+.hidden:nth-child(2){
+  transition-delay: 400ms;
+}
+.hidden:nth-child(1){
+  transition-delay: 600ms;
+}
+.show {
+  transform: translateX(0);
+  filter: blur(0);
+  opacity: 1;
+}
 @media (min-width: 1024px) {
-  .card-body {
-    width: 23%;
-  }
+    .card-body {
+        width: 23%;
+    }
 }
 
 /* Media query untuk tampilan di tablet atau perangkat seluler lainnya */
 @media (max-width: 1023px) {
-  .card-body {
-    width: 45%; /* Sesuaikan lebar untuk tampilan di tablet atau perangkat seluler */
-  }
+    .card-body {
+        width: 45%; /* Sesuaikan lebar untuk tampilan di tablet atau perangkat seluler */
+    }
 }
 
 .expand-button div {
@@ -80,9 +100,9 @@ body {
     transition: 500ms ease-in-out all;
     line-height: 0;
     cursor: pointer;
-  }
-    
-  .expand-button div:focus {
+}
+
+.expand-button div:focus {
     font-size: 18px;
     margin-top: -5px;
     color: #555;
@@ -90,34 +110,38 @@ body {
     letter-spacing: 1.1px;
     line-height: 1.5;
     outline: none;
-  }
-  
-  .expand-button div:after {
-   width: 100%;
-   text-align: center;
-   position: relative;
-   display: block;
-   content: "Read More...";
-  }
-  
-  .expand-button div:focus:before {
+}
+
+.expand-button div:after {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: block;
+    content: "Read More...";
+}
+
+.expand-button div:focus:before {
     opacity: 0;
-  }
-  
-  .expand-button div:focus span {
+}
+
+.expand-button div:focus span {
     animation: 2s show;
-    opacity: 1;  
-  }
-  
-  .expand-button div span {
-    opacity: 0;          
-  }
-  
-  .expand-button div:focus:after {
+    opacity: 1;
+}
+
+.expand-button div span {
+    opacity: 0;
+}
+
+.expand-button div:focus:after {
     display: none;
-  }
-  
-  @keyframes show {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

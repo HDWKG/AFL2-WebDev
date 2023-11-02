@@ -77,16 +77,16 @@
 
         <h2 class="about-subheading">Our Values</h2>
         <div class="about-list about-p">
-            <p class="card-body" data-aos="fade-right"><strong>Quality Excellence</strong> <br> We are committed to sourcing the highest-quality
+            <p class="card-body hidden"><strong>Quality Excellence</strong> <br> We are committed to sourcing the highest-quality
                 ingredients,
                 ensuring that every dish is a masterpiece of taste and texture.</p>
-            <p class="card-body" data-aos="fade-right"><strong>Exceptional Service</strong> <br> Our friendly and efficient team is dedicated to
+            <p class="card-body hidden"><strong>Exceptional Service</strong> <br> Our friendly and efficient team is dedicated to
                 making your visit a
                 delight, ensuring your needs are met with a warm smile and prompt service.</p>
-            <p class="card-body" data-aos="fade-right"><strong>Clean and Comfortable</strong> We take great care in maintaining clean and
+            <p class="card-body hidden"><strong>Clean and Comfortable</strong> We take great care in maintaining clean and
                 comfortable dining
                 environments, creating a welcoming space for you to enjoy your meal.</p>
-            <p class="card-body" data-aos="fade-right"><strong>Community Engagement</strong> We believe in giving back to the communities that
+            <p class="card-body hidden"><strong>Community Engagement</strong> We believe in giving back to the communities that
                 support us. We
                 actively engage in initiatives that make a positive impact and foster a sense of togetherness.</p>
         </div>
@@ -112,6 +112,7 @@
             you not just a meal, but an experience. Join us as we continue to delight your senses and make every
             visit a memorable moment in your culinary journey.</p>
         </div>
+    <script defrer src="{{asset('js/about.js')}}"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
