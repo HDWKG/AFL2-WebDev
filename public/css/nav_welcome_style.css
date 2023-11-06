@@ -229,7 +229,7 @@ body {
 .specialty .box-container .box .content img {
     margin: 1.5rem 0;
     width: 100px;
-    height: 100px;
+    height: 100%;
 }
 .specialty .box-container .box .content h3 {
     font-size: 2.5rem;

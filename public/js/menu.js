@@ -8,45 +8,49 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-document.querySelectorAll(".product-item").forEach((item) => {
-    observer.observe(item);
-});
-
 document.addEventListener("DOMContentLoaded", function () {
     const filterButtons = document.querySelectorAll(".filter-button");
     const menuItems = document.querySelectorAll(".menu-item");
-
+    
+    // Retrieve the category ID from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const category_id = urlParams.get("category_id");
+    
+    // Filter products based on the category ID
+    filterProducts(category_id);
+    
     filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
             const filter = button.getAttribute("data-filter");
-
-            // Remove the 'active' class from all filter buttons
-            filterButtons.forEach((btn) => {
-                btn.classList.remove("active");
-            });
-
-            // Add the 'active' class to the clicked filter button
-            button.classList.add("active");
-
-            // Show all items when "All" is clicked
-            if (filter === "all") {
-                menuItems.forEach((item) => {
-                    item.style.display = "block";
-                });
-            } else {
-                menuItems.forEach((item) => {
-                    const itemFilter = item.getAttribute("data-filter");
-                    if (itemFilter === filter) {
-                        item.style.display = "block";
-                    } else {
-                        item.style.display = "none";
-                    }
-                });
-            }
+            filterProducts(filter);
         });
     });
+
+    // Function to filter products
+    function filterProducts(category_id) {
+        filterButtons.forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        if (category_id === null || category_id === "all") {
+            // Show all items when "All" is clicked or no category is specified
+            menuItems.forEach((item) => {
+                item.style.display = "block";
+            });
+        } else {
+            menuItems.forEach((item) => {
+                const itemFilter = item.getAttribute("data-filter");
+                if (itemFilter === category_id) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    }
 });
 
+// Your scroll button functionality remains the same
 document.addEventListener("DOMContentLoaded", function () {
     const filterMenu = document.querySelector(".filter-menu");
     const scrollLeftButton = document.querySelector(".scroll-button.left");
