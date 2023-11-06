@@ -52,7 +52,7 @@
         <div class="filter-wrapper">
             <button class="scroll-button left"><i class="fa-solid fa-arrow-left"></i></button>
             <div class="filter-menu">
-                <button class="filter-button" data-filter="all">
+                <button class="filter-button active" data-filter="all">
                     <div class="filter-card">
                         <div class="filter-icon">
                             <i class="fa-solid fa-utensils"></i>
@@ -111,10 +111,6 @@
             </div>
             <button class="scroll-button right"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
-
-        {{-- pake datafilter --}}
-        {{--  <div class="menu-item" data-filter="appetizer">Appetizer 1</div> --}}
-        {{-- utk --}}
 
         <section class="shop" id="shop">
             <div class="shop-content">

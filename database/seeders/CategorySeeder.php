@@ -17,7 +17,7 @@ class CategorySeeder extends Seeder
             'name' => 'Tasty Burger',
             'coverimg' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/800px-Hamburger_%28black_bg%29.jpg',
             'logo' => 'https://img.freepik.com/premium-vector/burger-logo-icon_567288-500.jpg',
-            'desc' => 'Discover a wide variety of burger options, each lovingly crafted to perfection by our talented chefs. Sink your teeth into juicy beef patties, tender chicken burgers, or delectable plant-based alternatives. You can also explore an array of buns, toppings, sauces, and sides to personalize your burger experience just the way you like it.'
+            'desc' => 'Discover a wide variety of burger options, each lovingly crafted to perfection by our talented chefs. Sink your teeth into juicy beef patties, tender chicken burgers, or delectable plant-based alternatives.'
         ]);
         Category::create([
             'name' => 'Ice Cream',

@@ -49,7 +49,7 @@
         <div class="box-container">
             @foreach ($categories as $category)
             <div class="box">
-                <a href="/menu" class="spec">
+                <a href="/menu?filter={{$category->id}}" class="spec">
                     <img class="image"
                         src= {{ $category->coverimg }}
                         alt="">
