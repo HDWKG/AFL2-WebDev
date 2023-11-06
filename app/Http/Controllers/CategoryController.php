@@ -56,6 +56,6 @@ class CategoryController extends Controller
     public function returnCategory()
     {
         $category = Category::all();
-        return view('menu', ['title' => 'Our Menu', 'categories' => $category]);
+        return view('welcome', ['title' => 'Home', 'categories' => $category]);
     }
 }

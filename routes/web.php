@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BranchController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,4 +28,5 @@ Route::get('/about', function () {
 });
 Route::get("/book", [BranchController::class,"returnBranch"])->name("");
 Route::get("/menu", [ProductController::class, "returnProduct"])->name("");
+Route::get("/",[CategoryController::class, 'returnCategory'])->name("");
 Route::get('/menuDetails/{id}', [ProductController::class, 'show'])->name('viewProduct');
