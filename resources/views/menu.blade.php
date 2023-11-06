@@ -185,5 +185,77 @@
             @endforeach
         </div>
     </section>
-    <script defrer src="{{asset('js/menu.js')}}"></script>
+    <section class="filter">
+        <div class="heading">
+            <h4 class="favorite-txt">Our <span>Menus</span></h4>
+        </div>
+        <div class="filter-wrapper">
+            <button class="scroll-button left"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="filter-menu">
+                <button class="filter-button" data-filter="all">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p>All Menus</p>
+                    </div>
+                </button>
+                <button class="filter-button" data-filter="appetizer">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p>Appetizers</p>
+                    </div>
+                </button>
+                <button class="filter-button" data-filter="appetizer">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p>Appetizers</p>
+                    </div>
+                </button>
+            </div>
+            <button class="scroll-button right"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        {{-- pake datafilter --}}
+        {{--  <div class="menu-item" data-filter="appetizer">Appetizer 1</div> --}}
+        {{-- utk --}}
+
+        <section class="shop" id="shop">
+            <div class="shop-content">
+                @foreach ($products as $product)
+                    <div class="row product-item">
+                        @if ($product->image)
+                            <?php
+                            $base64Image = base64_encode($product->image);
+                            $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
+                            $dataUri = "data:$mimeType;base64,$base64Image";
+                            ?>
+                            <img src="{{ $dataUri }}" alt="">
+                        @else
+                            <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+                                alt="Placeholder Image">
+                        @endif
+                        <h3>{{ $product->name }}</h3>
+                        <p>{{ $product->desc }}</p>
+                        <div class="intext">
+                            <div class="price">
+                                <h6>{{ $product->price }}</h6>
+                            </div>
+                            <div class="s-btnn">
+                                <a href="{{ route('viewProduct', ['id' => $product->id]) }}">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="top-icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+    </section>
+    <script defrer src="{{ asset('js/menu.js') }}"></script>
 </x-frame>
