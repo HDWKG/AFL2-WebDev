@@ -125,7 +125,7 @@
 }
 
 .filter-button.active .filter-card {
-    background-color: red;
+    background-color: #f70d1a;
     color: #fff;
 }
 
