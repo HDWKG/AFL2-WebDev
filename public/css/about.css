@@ -84,10 +84,9 @@ body {
     }
 }
 
-/* Media query untuk tampilan di tablet atau perangkat seluler lainnya */
 @media (max-width: 1023px) {
     .card-body {
-        width: 45%; /* Sesuaikan lebar untuk tampilan di tablet atau perangkat seluler */
+        width: 45%;
     }
 }
 
