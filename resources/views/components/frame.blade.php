@@ -40,7 +40,7 @@
 </head>
 
 <body>
-    <div class="container p-4">
+    <div class="container p-6">
         <div class="row align-items-center">
             <div class="col-2">
                 <a href="/">
@@ -53,7 +53,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="col-6 text-center">
             <ul class="nav justify-content-center">
