@@ -45,7 +45,7 @@
 
         </div>
     </section>
-    <section class="filter">
+    <section class="filter" id="filter">
         <div class="heading">
             <h4 class="favorite-txt">Our <span>Menus</span></h4>
         </div>

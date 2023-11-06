@@ -49,7 +49,7 @@
         <div class="box-container">
             @foreach ($categories as $category)
             <div class="box">
-                <a href="/menu?category_id={{ $category->id }}" class="spec">
+                <a href="/menu?category_id={{ $category->id }}#filter" class="spec">
                     <img class="image"
                         src= {{ $category->coverimg }}
                         alt="">
@@ -64,7 +64,6 @@
             @endforeach
         </div>
     </section>
-
     <section class="review" id="review">
         <h1 class="heading"> Our Customers <span>Reviews</span></h1>
         <div class="box-container">
