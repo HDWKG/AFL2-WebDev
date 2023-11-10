@@ -3,13 +3,14 @@
         {{ $title }}
     </x-slot:title>
     <x-slot:layout_image>
-        <img src="{{ asset('images/banner1.jpg') }}" style="width:100%" class="p-0">
+        <div class = "faded-image">
+        <img src="https://wallsdesk.com/wp-content/uploads/2017/01/Fast-Food-for-desktop-background.jpg" style="width:100%" class="p-0">
+    </div>
     </x-slot:layout_image>
     <x-slot:slot_about>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <div class="fade-up-element">
             <h1 class="about-heading">About Us</h1>
             <p class="about-p1">Welcome to Fast Food Delight, where gastronomy and contemporary convenience converge to
                 redefine the fast food experience. At Fast Food Delight, we pride ourselves on being much more than just
@@ -25,7 +26,6 @@
                 us and savor the difference at Fast Food Delight - where every bite is a delightful step into a world of
                 extraordinary flavors and cherished memories.</p>
         </div>
-
 
         <h2 class="about-subheading">Our Story</h2>
         <p class="about-p1">Our epic journey embarked on an exciting path back in the year 1985 when our
@@ -113,9 +113,5 @@
             visit a memorable moment in your culinary journey.</p>
         </div>
     <script defrer src="{{asset('js/about.js')}}"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
     </x-slot:slot_about>
 </x-frame>
