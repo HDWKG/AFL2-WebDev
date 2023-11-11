@@ -114,7 +114,6 @@ body {
 
 .slider {
     width: 800px;
-    max-width: 100vw;
     height: 400px;
     margin: auto;
     position: relative;
@@ -179,17 +178,6 @@ body {
 .slider .dots li.active {
     width: 30px;
     background-color: red;
-}
-@media (max-width: 768px) {
-    .slider {
-        max-width: 100%; /* Full width on smaller screens */
-        height: auto;
-    }
-
-    .slider .list img {
-        width: 100%;
-        height: auto;
-    }
 }
 
 .heading {
