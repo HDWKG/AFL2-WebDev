@@ -6,6 +6,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.spacer {
+    height: 100px;
+}
+
 .about-heading {
     font-size: 60px;
     color: #333;
@@ -34,6 +38,14 @@ body {
     margin-top: 15px;
     text-align: center;
     letter-spacing: 1px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .about-list p {
@@ -145,6 +157,7 @@ body {
 .expand-button div:focus span {
     animation: 2s show;
     opacity: 1;
+    margin-bottom: 100px;
 }
 
 .expand-button div span {
@@ -155,11 +168,28 @@ body {
     display: none;
 }
 
+.hidden-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden-images img {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
 .fade-up-element {
     opacity: 1;
     transform: translateY(100%);
     filter: blur(5px);
     transition: transform 1s, opacity 1s;
+    margin-right: 15px;
+}
+
+.rounded-image {
+    border-radius: 10px; /* Adjust the radius as needed */
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 .in-view {

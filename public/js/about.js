@@ -8,7 +8,6 @@ const hiddenObserver = new IntersectionObserver((entries) => {
     }
   }
 },{
-  threshold: 0.25
 });
 document.querySelectorAll('.hidden').forEach((item) => {
   hiddenObserver.observe(item);
