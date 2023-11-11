@@ -40,45 +40,39 @@
 </head>
 
 <body>
-    <div class="container p-6">
-        <div class="row align-items-center">
-            <div class="col-2">
-                <a href="/">
-                    <div class="logo-container">
-                        <img src="https://static.vecteezy.com/system/resources/previews/008/480/737/original/burger-icon-simple-colored-burger-icon-fast-food-logo-free-png.png"
-                            alt="Logo Picture" class="logo" />
-                </a>
-                <div class="name">
-                    <h3 class="company-name">Fast Delight</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6 text-center">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->is('/') ? 'active-link' : '' }}" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->is('about') ? 'active-link' : '' }}" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->is('menu') ? 'active-link' : '' }}" href="/menu">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->is('book') ? 'active-link' : '' }}" href="/book">Book Now</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-4 d-flex justify-content-end">
-            <a href="#" class="icon-link" id="search-icon">
-                <i class="fas fa-search"></i>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="https://static.vecteezy.com/system/resources/previews/008/480/737/original/burger-icon-simple-colored-burger-icon-fast-food-logo-free-png.png"
+                    alt="Logo Picture" class="logo" />
+                <h3 class="company-name">Fast Delight</h3>
             </a>
-            <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
-            <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+
+            <button class="navbar-toggler custom-toggler-icon" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('/') ? 'active-link' : '' }}" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('about') ? 'active-link' : '' }}" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('menu') ? 'active-link' : '' }}" href="/menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('book') ? 'active-link' : '' }}" href="/book">Book Now</a>
+                    </li>
+                </ul>
+            </div>
             <a href="#" class="btn btn-primary btn-orange">Order Online</a>
         </div>
-    </div>
+    </nav>
+
+
     <hr style="border: 1px solid white;">
     </div>
     <div class="container p-4">
@@ -139,12 +133,9 @@
             }
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjvP/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

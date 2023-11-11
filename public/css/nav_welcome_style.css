@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
-.col-2 {
-    display: flex;
-    align-items: center;
-}
 .company-name {
     margin-top: 7px !important;
     margin-bottom: 7px !important;
@@ -14,24 +10,31 @@
     align-self: center;
     font-family: "Dancing Script", sans-serif;
 }
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-}
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-toggler {
+    font-size: 14px;
+}
+
+.navbar-nav {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .nav-item a {
     text-decoration: none;
     font-size: 18px;
     margin-right: 20px;
-    padding-right: 10px;
+    /* padding-right: 10px; */
 }
 
 .nav-item a:not(.active-link) {
@@ -55,22 +58,24 @@
     color: black;
     text-decoration: none;
 }
+
 .btn-orange:hover {
     background-color: red;
     color: white;
     border-color: red;
 }
+
 .btn-orange:active {
     background-color: indianred !important;
     color: white !important;
     border-color: indianred !important;
 }
+
 .icon-link {
     text-decoration: none;
     color: black;
     margin-right: 20px;
 }
-
 body {
     background: white;
     line-height: 1.1;
@@ -251,21 +256,21 @@ body {
         height: 200px;
         width: 100px;
     }
-    .container{
+    .container {
         width: 100%;
         padding: 1rem;
         margin: 0%;
     }
-    .nav-item{
+    .nav-item {
         width: 100%;
-    } 
+    }
 }
 .footer .row {
     display: flex;
     flex-wrap: wrap;
 }
 .footer {
-    position:relative;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #24262b;
@@ -400,4 +405,20 @@ body {
     .footer-col {
         width: 100%;
     }
+}
+@media screen and (max-width: 768px) {
+    nav .btn-orange {
+        display: none !important;
+    }
+}
+.custom-toggler-icon {
+    background-image: url('https://cdn.iconscout.com/icon/free/png-256/free-burger-2664522-2208951.png?f=webp'); /* Replace 'path/to/your/custom-icon.png' with the path to your custom image */
+    background-size: cover; /* Adjust the background size as needed */
+    width: 30px; /* Adjust the width of the icon */
+    height: 30px; /* Adjust the height of the icon */
+    border: none; /* Remove default border */
+}
+
+.custom-toggler-icon span {
+    display: none;
 }
