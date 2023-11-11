@@ -26,6 +26,9 @@ Route::get('/about', function () {
         "title" => "About Us",
     ]);
 });
+Route::get("/test", function () {
+    return view('test');
+});
 Route::get("/book", [BranchController::class,"returnBranch"])->name("");
 Route::get("/menu", [ProductController::class, "returnProduct"])->name("");
 Route::get("/",[CategoryController::class, 'returnCategory'])->name("");
