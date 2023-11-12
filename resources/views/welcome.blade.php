@@ -139,6 +139,5 @@
                 @endforeach
             </div>
         </section>
-
     </x-slot:slot_about>
 </x-frame>
