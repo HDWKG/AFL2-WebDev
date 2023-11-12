@@ -48,17 +48,20 @@ body {
     margin-top: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 1024px) {
+    .about-content {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1023px) {
     .about-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .rounded-image {
-        margin-top: 0;
-        margin-right: 20px;
+        margin-top: 15px;
+        max-height: max-content;
     }
 }
 
@@ -135,12 +138,6 @@ body {
     }
 }
 
-.container1 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
 .hidden1 {
     opacity: 0;
     max-height: 0;
@@ -150,14 +147,16 @@ body {
 
 .hidden1.show {
     opacity: 1;
-    max-height: 1000px; /* Adjust this value based on your content height */
+    max-height: 5000px;
+    /* Adjust this value based on your content height */
 }
 
 .expand-btn {
     cursor: pointer;
     text-decoration: underline;
     text-align: center;
-    transition: opacity 0.5s ease-out; /* Add transition for opacity */
+    transition: opacity 0.5s ease-out;
+    /* Add transition for opacity */
 }
 
 .hidden1 .expand-btn {
@@ -186,6 +185,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -200,8 +200,8 @@ body {
 }
 
 .rounded-image {
-    border-radius: 10px; 
-    width: 100%; 
+    border-radius: 10px;
+    width: 100%;
     height: auto;
     margin-right: 20px;
 }

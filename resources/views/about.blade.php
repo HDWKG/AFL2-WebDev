@@ -29,7 +29,7 @@
 
         <div class="spacer"></div>
 
-        <div class="container1">
+        <div class="about-content">
             <img class="rounded-image" src="https://i.pinimg.com/564x/85/4c/20/854c20122b48fdbfcf5a4ba0b0d18b95.jpg" alt="">
             <div>
                 <h2 class="about-subheading">Our Story</h2>
@@ -39,13 +39,13 @@
         </div>
     
         <div class="hidden1" id="expanded-section">
-            <div class="container1">
+            <div class="about-content">
                 <img class="rounded-image" src="https://i.pinimg.com/564x/71/43/8c/71438c9f0799db9ee6c465fd743f6b26.jpg" alt="">
                 <div>
                     <p class="about-p1">Our commitment to excellence has remained steadfast throughout our journey. We have meticulously crafted a menu that combines classic favorites with innovative creations, ensuring that every bite is a culinary revelation. We take pride in using only the finest and freshest ingredients to create dishes that resonate with the essence of pure flavor. Our chefs work tirelessly to perfect each recipe, delivering an exceptional dining experience that is simply unforgettable. Over the years, we've ventured into uncharted culinary territories, experimenting with new flavors and international influences.</p>
                 </div>
             </div>
-            <div class="container1">
+            <div class="about-content">
                 <img class="rounded-image" src="https://i.pinimg.com/564x/85/0f/a2/850fa21a46ac10029572017242e1b380.jpg" alt="">
                 <div>
                     <p class="about-p1">Our menu is a testament to our relentless pursuit of perfection. From savory gourmet burgers to artisanal pizzas and fusion delicacies that spark culinary curiosity, our offerings cater to a diverse array of palates. Our story is woven with passion, dedication, and an unwavering commitment to serving our community. We believe that food is a universal language that brings people together. We're not just a restaurant; we're a gathering place where friends and families create cherished memories over a shared meal. Fast Food Delight is more than a culinary destination; it's a reflection of our love for food and the people we serve. We invite you to join us on this gastronomic journey, where every visit promises a delightful experience, and every dish tells a story of our dedication to culinary artistry.</p>
