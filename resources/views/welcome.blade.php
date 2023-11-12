@@ -102,84 +102,44 @@
                 @endforeach
             </div>
         </section>
-        {{-- <section class="review" id="review">
+        <section class="review" id="review">
             <h1 class="heading"> Our Customers <span>Reviews</span></h1>
             <div class="filter-menu">
-                <button class="filter-button" data-filter="1">
+                <button class="filter-button" data-filter="all">
                     <div class="filter-card">
-                        <p>Store 1</p>
+                        <p>All Stores</p>
                     </div>
                 </button>
-                <button class="filter-button" data-filter="2">
-                    <div class="filter-card">
-                        <p>Store 2</p>
-                    </div>
-                </button>
+                @foreach ($branches as $branch)
+                    <button class="filter-button" data-filter="{{ $branch->branch_id }}">
+                        <div class="filter-card">
+                            <p>{{ $branch->branch_name }}</p>
+                        </div>
+                    </button>
+                @endforeach
             </div>
 
             <div class="box-container">
                 @foreach ($storereviews as $rev)
                     <div class="box" data-filter="{{ $rev->branch_id }}">
-                        @if ($rev['image'] != null)
-                            <img src="{{ $rev['image'] }}">
+                        @if ($rev->image)
+                            <img src="{{ asset($rev->image) }}" alt="{{ $rev->name }}">
                         @endif
                         <h3>{{ $rev->name }}</h3>
                         <div class="stars">
-                            @for ($i = 0; $i < $rev['stars']; $i++)
+                            @for ($i = 0; $i < $rev->stars; $i++)
                                 <i class="fas fa-star"></i>
                             @endfor
 
-                            @for ($i = $rev['stars']; $i < 5; $i++)
+                            @for ($i = $rev->stars; $i < 5; $i++)
                                 <i class="far fa-star"></i>
                             @endfor
                         </div>
                         <p>{{ $rev->review }}</p>
                     </div>
-            </div>
-            @endforeach
-        </section> --}}
-        <section class="review" id="review">
-            <h1 class="heading"> Our Customers <span>Reviews</span></h1>
-            <div class="box-container">
-                <div class="box">
-                    <img src="https://www.wilsoncenter.org/sites/default/files/media/images/person/james-person-1.jpg"
-                        alt="">
-                    <h3>John DOe</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>Fast Food Delight is an absolute gem in the world of fast food. The moment you step in, the inviting aroma of freshly prepared delights hits you, setting the stage for a fantastic dining experience. The menu offers a diverse range of options, from classic burgers to innovative wraps and salads. What truly sets them apart is the quality of their ingredients – everything tastes incredibly fresh. The service is prompt, and the staff is friendly and attentive. Fast Food Delight earns a solid 5-star rating for consistently delivering delicious food with exceptional service. It's my go-to spot for a quick and satisfying meal.</p>
-                </div>
-                <div class="box">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww"
-                        alt="">
-                    <h3>Jane Smith</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p>Fast Food Delight is a reliable choice for a quick bite that won't disappoint. The menu is expansive, catering to various tastes, and the food is consistently good. I appreciate the speed of service, making it convenient for those on a tight schedule. The ambiance is typical of a fast-food joint – clean and functional. While the overall experience is commendable, there's always room for improvement. Perhaps a few more healthy options could be added to the menu. Nevertheless, with its tasty offerings and efficient service, Fast Food Delight deserves a solid 4-star rating.</p>
-                </div>
-                <div class="box">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg" alt="">
-                    <h3>Daniel Fernando</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>Fast Food Delight is my go-to place for a delicious and hassle-free meal. The quality of their food consistently exceeds expectations. The burgers are juicy, the fries are perfectly crisp, and the shakes are a delightful treat. What stands out the most is the attention to detail – even the condiments are top-notch. The staff is not only quick but also courteous, making the overall dining experience enjoyable. Fast Food Delight deserves a solid 5-star rating for consistently delivering mouthwatering food with a smile. It's a true delight for any fast-food enthusiast.</p>
-                </div>
+                @endforeach
             </div>
         </section>
+
     </x-slot:slot_about>
 </x-frame>
