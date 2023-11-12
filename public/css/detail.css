@@ -111,17 +111,13 @@ body {
 
 .card-product .price {
     font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust top margin if needed */
 }
 
-.card-product .buttons {
-    padding: 20px 0;
+a {
+    text-decoration: none;
 }
-
-.card-product .btn-orange {
-    background-color: orange;
-    color: white;
-}
-
 .favorite {
     border-radius: 5px;
     margin-top: 100px;
@@ -165,8 +161,9 @@ body {
 
 .favorite .card-body {
     flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
 }
-
 .favorite .card-price {
     font-size: 12px;
     color: red;
@@ -182,10 +179,10 @@ body {
     overflow: hidden;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    flex: 1;
 }
 
 .favorite .card-title,
-.favorite .card-text,
 .favorite .card-price {
     flex: 1;
 }

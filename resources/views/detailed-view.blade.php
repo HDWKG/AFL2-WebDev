@@ -39,7 +39,7 @@
             <div class="favorite text-center">
                 <h3>Our <span>Other</span> Products</h3>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                    <div class="col">
+                    <a href="{{ route('viewProduct', ['id' => $product1->id]) }}" class="col">
                         <div class="card h-100">
                             @if ($product1->image)
                                 <?php
@@ -56,12 +56,10 @@
                                 <h5 class="card-title">{{ $product1->name }}</h5>
                                 <p class="card-text">{{ $product1->desc }}</p>
                                 <p class="card-price">{{ $product1->price }}</p>
-                                <a href="{{ route('viewProduct', ['id' => $product1->id]) }}"
-                                    class="btn btn-primary btn-orange">Add to Cart</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
+                    </a>
+                    <a href="{{ route('viewProduct', ['id' => $product2->id]) }}" class="col">
                         <div class="card h-100">
                             @if ($product2->image)
                                 <?php
@@ -78,12 +76,11 @@
                                 <h5 class="card-title">{{ $product2->name }}</h5>
                                 <p class="card-text">{{ $product2->desc }}</p>
                                 <p class="card-price">{{ $product2->price }}</p>
-                                <a href="{{ route('viewProduct', ['id' => $product2->id]) }}"
-                                    class="btn btn-primary btn-orange">Add to Cart</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
+                    </a>
+
+                    <a href="{{ route('viewProduct', ['id' => $product3->id]) }}" class="col">
                         <div class="card h-100">
                             @if ($product3->image)
                                 <?php
@@ -100,12 +97,11 @@
                                 <h5 class="card-title">{{ $product3->name }}</h5>
                                 <p class="card-text">{{ $product3->desc }}</p>
                                 <p class="card-price">{{ $product3->price }}</p>
-                                <a href="{{ route('viewProduct', ['id' => $product3->id]) }}"
-                                    class="btn btn-primary btn-orange">Add to Cart</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
+                    </a>
+
+                    <a href="{{ route('viewProduct', ['id' => $product4->id]) }}" class="col">
                         <div class="card h-100">
                             @if ($product4->image)
                                 <?php
@@ -122,11 +118,9 @@
                                 <h5 class="card-title">{{ $product4->name }}</h5>
                                 <p class="card-text">{{ $product4->desc }}</p>
                                 <p class="card-price">{{ $product4->price }}</p>
-                                <a href="{{ route('viewProduct', ['id' => $product4->id]) }}"
-                                    class="btn btn-primary btn-orange">Add to Cart</a>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="reviews">
@@ -134,46 +128,29 @@
                     <h3 class="title">Our <span>Customer</span> Reviews</h3>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-name">John Doe</div>
-                                <div class="review-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                    @foreach ($reviews as $review)
+                        @if ($review->directed == $product->name)
+                            <div class="col-md-6">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="reviewer-name">{{ $review['name'] }}</div>
+                                        <div class="review-rating">
+                                            @for ($i = 0; $i < $review['stars']; $i++)
+                                                <i class="fa fa-star"></i>
+                                            @endfor
+
+                                            @for ($i = $review['stars']; $i < 5; $i++)
+                                                <i class="fa fa-star fa-regular"></i>
+                                            @endfor
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>{{ $review['review'] }}</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="review-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac diam vitae
-                                    augue scelerisque luctus. Sed vitae leo vel libero euismod tincidunt. Sed ac
-                                    mauris et ligula orci ullamcorper ultricies. Sed eget mauris ac quam luctus
-                                    lobortis. Sed enim massa, tincidunt eget augue sit amet, semper mauris.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-name">Jane Doe</div>
-                                <div class="review-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                            <div class="review-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac diam vitae
-                                    augue scelerisque luctus. Sed vitae leo vel libero euismod tincidunt. Sed ac
-                                    mauris et ligula orci ullamcorper ultricies. Sed eget mauris ac quam luctus
-                                    lobortis. Sed enim massa, tincidunt eget augue sit amet, semper mauris.</p>
-                            </div>
-                        </div>
-                    </div>
+                        @endif
+                    @endforeach
                 </div>
 
                 <div class="review-form">
@@ -207,7 +184,7 @@
             allStar.forEach((item, idx) => {
                 item.addEventListener('click', function() {
                     let click = 0;
-                    ratingValue.value = idx +1
+                    ratingValue.value = idx + 1
                     allStar.forEach(i => {
                         i.classList.replace('fa-solid', 'fa-regular');
                         i.classList.remove('active');
