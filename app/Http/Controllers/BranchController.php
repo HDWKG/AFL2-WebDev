@@ -67,10 +67,4 @@ class BranchController extends Controller
         $branch = Branch::all();
         return view('book', ['title' => 'Reserve Our Tables', 'branches' => $branch]);
     }
-
-    public function returnBranches()
-    {
-        $branch = Branch::all();
-        return view('welcome', ['title' => 'Home', 'branches' => $branch]);
-    }
 }

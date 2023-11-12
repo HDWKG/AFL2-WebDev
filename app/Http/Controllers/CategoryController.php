@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Branch;
 use App\Models\Category;
+use App\Models\StoreReviews;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -56,6 +58,8 @@ class CategoryController extends Controller
     public function returnCategory()
     {
         $category = Category::all();
-        return view('welcome', ['title' => 'Home', 'categories' => $category]);
+        $storeReview = StoreReviews::all();
+        $branch = Branch::all();
+        return view('welcome', ['title' => 'Home', 'categories' => $category, 'storereviews' => $storeReview, 'branches' => $branch]);
     }
 }

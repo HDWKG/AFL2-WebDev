@@ -29,7 +29,7 @@ Route::get('/about', function () {
 Route::get("/test", function () {
     return view('test');
 });
-Route::get("/book", [BranchController::class,"returnBranch"])->name("");
+Route::get("/book", [BranchController::class, "returnBranch"])->name("");
 Route::get("/menu", [ProductController::class, "returnProduct"])->name("");
-Route::get("/",[CategoryController::class, 'returnCategory'])->name("");
+Route::get("/", [CategoryController::class, 'returnCategory'])->name("");
 Route::get('/menuDetails/{id}', [ProductController::class, 'show'])->name('viewProduct');

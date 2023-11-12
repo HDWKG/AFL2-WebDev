@@ -51,7 +51,7 @@ class StoreReviewsSeeder extends Seeder
         StoreReviews::create([
             'name' => 'Olivia Davis',
             'branch_id' => '2',
-            'image' => 'https://th.bing.com/th/id/R.978e34267eb9b6b30d3b3ebe2c87a7ca?rik=MSEEtsrd3hNj4A&riu=http%3a%2f%2ftheagencymaryland.com%2fwp-content%2fuploads%2f2019%2f03%2fAmanda-Stein.jpg&ehk=aNFwioICpFmR2c5mp5ftn3pYO7smRlV%2bfrBlsh26Hzw%3d&risl=&pid=ImgRaw&r=0',
+            'image' => 'https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B',
             'review' => 'I\'m a regular at Fast Food Delight, and it never disappoints. The consistency in quality is impressive, and the flavors are always on point. The staff is courteous and ensures a pleasant dining experience. I highly recommend it for anyone craving delicious fast food. A solid 5-star rating!',
             'stars' => '5'
         ]);
