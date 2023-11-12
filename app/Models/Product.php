@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -10,5 +11,5 @@ class Product extends Model
 
     protected $table = 'products';
 
-    protected $fillable = ['name', 'category_id','desc', 'price', 'image', 'IsLiked'];
+    protected $fillable = ['name', 'category_id', 'desc', 'price', 'IsLiked', 'image'];
 }

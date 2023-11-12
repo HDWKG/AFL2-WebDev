@@ -15,13 +15,8 @@
         <div class="container">
             <div class="detail">
                 <div class="image">
-                    @if ($product->image)
-                        <?php
-                        $base64Image = base64_encode($product->image);
-                        $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
-                        $dataUri = "data:$mimeType;base64,$base64Image";
-                        ?>
-                        <img src="{{ $dataUri }}" alt="">
+                    @if ($product['image'] != null)
+                        <img src="{{ $product['image'] }}">
                     @else
                         <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
                             alt="Placeholder Image">
@@ -41,13 +36,8 @@
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <a href="{{ route('viewProduct', ['id' => $product1->id]) }}" class="col">
                         <div class="card h-100">
-                            @if ($product1->image)
-                                <?php
-                                $base64Image = base64_encode($product1->image);
-                                $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
-                                $dataUri = "data:$mimeType;base64,$base64Image";
-                                ?>
-                                <img src="{{ $dataUri }}" alt="">
+                            @if ($product1['image'] != null)
+                                <img src="{{ $product1['image'] }}">
                             @else
                                 <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
                                     alt="Placeholder Image">
@@ -61,13 +51,8 @@
                     </a>
                     <a href="{{ route('viewProduct', ['id' => $product2->id]) }}" class="col">
                         <div class="card h-100">
-                            @if ($product2->image)
-                                <?php
-                                $base64Image = base64_encode($product2->image);
-                                $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
-                                $dataUri = "data:$mimeType;base64,$base64Image";
-                                ?>
-                                <img src="{{ $dataUri }}" alt="">
+                            @if ($product2['image'] != null)
+                                <img src="{{ $product2['image'] }}">
                             @else
                                 <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
                                     alt="Placeholder Image">
@@ -82,13 +67,8 @@
 
                     <a href="{{ route('viewProduct', ['id' => $product3->id]) }}" class="col">
                         <div class="card h-100">
-                            @if ($product3->image)
-                                <?php
-                                $base64Image = base64_encode($product3->image);
-                                $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
-                                $dataUri = "data:$mimeType;base64,$base64Image";
-                                ?>
-                                <img src="{{ $dataUri }}" alt="">
+                            @if ($product3['image'] != null)
+                                <img src="{{ $product3['image'] }}">
                             @else
                                 <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
                                     alt="Placeholder Image">
@@ -103,13 +83,8 @@
 
                     <a href="{{ route('viewProduct', ['id' => $product4->id]) }}" class="col">
                         <div class="card h-100">
-                            @if ($product4->image)
-                                <?php
-                                $base64Image = base64_encode($product4->image);
-                                $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
-                                $dataUri = "data:$mimeType;base64,$base64Image";
-                                ?>
-                                <img src="{{ $dataUri }}" alt="">
+                            @if ($product4['image'] != null)
+                                <img src="{{ $product4['image'] }}">
                             @else
                                 <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
                                     alt="Placeholder Image">

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('desc');
             $table->string('price');
-            $table->binary('image')->nullable();
+            $table->string('image')->nullable();
             $table->boolean('IsLiked');
             $table->timestamps();
         });

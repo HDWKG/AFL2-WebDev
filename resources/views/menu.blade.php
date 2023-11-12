@@ -15,13 +15,8 @@
             @foreach ($products as $product)
                 @if ($product->IsLiked == 1)
                     <div class="row product-item">
-                        @if ($product->image)
-                            <?php
-                            $base64Image = base64_encode($product->image);
-                            $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
-                            $dataUri = "data:$mimeType;base64,$base64Image";
-                            ?>
-                            <img src="{{ $dataUri }}" alt="">
+                        @if ($product['image'] != null)
+                            <img src="{{ $product['image'] }}">
                         @else
                             <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
                                 alt="Placeholder Image">
@@ -116,17 +111,12 @@
             <div class="shop-content">
                 @foreach ($products as $product)
                     <div class="row product-item menu-item" data-filter="{{ $product->category_id }}">
-                        @if ($product->image)
-                            <?php
-                            $base64Image = base64_encode($product->image);
-                            $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
-                            $dataUri = "data:$mimeType;base64,$base64Image";
-                            ?>
-                            <img src="{{ $dataUri }}" alt="">
-                        @else
-                            <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
-                                alt="Placeholder Image">
-                        @endif
+                        @if ($product['image'] != null)
+                        <img src="{{ $product['image'] }}">
+                    @else
+                        <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+                            alt="Placeholder Image">
+                    @endif
                         <h3>{{ $product->name }}</h3>
                         <p>{{ $product->desc }}</p>
                         <div class="intext">
@@ -144,3 +134,16 @@
     </section>
     <script defrer src="{{ asset('js/menu.js') }}"></script>
 </x-frame>
+{{-- FOR BLOB FILE --}}
+{{-- @if ($product->image)
+                            <?php
+                            $base64Image = base64_encode($product->image);
+                            $mimeType = mime_content_type('data://text/plain;base64,' . $base64Image);
+                            $dataUri = "data:$mimeType;base64,$base64Image";
+                            ?>
+                            <img src="{{ $dataUri }}" alt="">
+                        @else
+                            <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+                                alt="Placeholder Image">
+                        @endif --}}
+{{-- FOR BLOB FILE --}}
