@@ -27,3 +27,8 @@ const fadeUpObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up-element').forEach((item) => {
   fadeUpObserver.observe(item);
 });
+
+function toggleExpand() {
+  const expandedSection = document.getElementById('expanded-section');
+  expandedSection.classList.toggle('show');
+}

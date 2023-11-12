@@ -121,61 +121,60 @@ body {
     }
 }
 
-.expand-button div {
-    position: relative;
-    vertical-align: top;
-    margin-top: -30px;
-    list-style: none;
-    display: inline-block;
-    transition: 500ms ease-in-out all;
-    line-height: 0;
-    cursor: pointer;
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-.expand-button div:focus {
-    font-size: 18px;
-    margin-top: -5px;
-    color: #555;
-    text-align: justify;
-    letter-spacing: 1.1px;
-    line-height: 1.5;
+.hidden1 {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.hidden1.show {
+    opacity: 1;
+    max-height: 1000px; /* Adjust this value based on your content height */
+}
+
+.expand-btn {
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+    transition: opacity 0.5s ease-out; /* Add transition for opacity */
+}
+
+.hidden1 .expand-btn {
+    opacity: 1;
+}
+
+.hidden1.show .expand-btn {
+    opacity: 0;
+}
+
+.expand-btn:focus {
     outline: none;
 }
 
-.expand-button div:after {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    display: block;
-    content: "Read More...";
-}
-
-.expand-button div:focus:before {
-    opacity: 0;
-}
-
-.expand-button div:focus span {
-    animation: 2s show;
+.hidden1 .container1 {
     opacity: 1;
-    margin-bottom: 100px;
+    transition: opacity 0.5s ease-out;
 }
 
-.expand-button div span {
-    opacity: 0;
+.hidden1 .container1 img {
+    max-width: 100%;
+    height: 100%;
 }
 
-.expand-button div:focus:after {
-    display: none;
-}
-
-.hidden-images {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hidden-images img {
-    width: 48%;
-    margin-bottom: 10px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .fade-up-element {
@@ -187,9 +186,10 @@ body {
 }
 
 .rounded-image {
-    border-radius: 10px; /* Adjust the radius as needed */
-    width: 100%; /* Ensure the image takes up the full width of the container */
-    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; 
+    width: 100%; 
+    height: auto;
+    margin-right: 20px;
 }
 
 .in-view {
