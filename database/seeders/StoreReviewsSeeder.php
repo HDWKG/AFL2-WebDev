@@ -18,7 +18,7 @@ class StoreReviewsSeeder extends Seeder
             'name' => 'Sophie Anderson',
             'branch_id' => '1',
             'image' => 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww',
-            'review' => 'Fast Food Delight is an absolute gem in the world of fast food. The moment you step in, the inviting aroma of freshly prepared delights hits you, setting the stage for a fantastic dining experience. The menu offers a diverse range of options, from classic burgers to innovative wraps and salads. What truly sets them apart is the quality of their ingredients – everything tastes incredibly fresh. The service is prompt, and the staff is friendly and attentive. Fast Food Delight earns a solid 5-star rating for consistently delivering delicious food with exceptional service. It\'s my go-to spot for a quick and satisfying meal.',
+            'review' => 'Fast Food Delight is an absolute gem in the world of fast food. The moment you step in, the inviting aroma of freshly prepared delights hits you, setting the stage for a fantastic dining experience. The menu offers a diverse range of options, from classic burgers to innovative wraps and salads.',
             'stars' => '5'
         ]);
 
@@ -51,7 +51,7 @@ class StoreReviewsSeeder extends Seeder
         StoreReviews::create([
             'name' => 'Olivia Davis',
             'branch_id' => '2',
-            'image' => 'https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B',
+            'image' => 'https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg',
             'review' => 'I\'m a regular at Fast Food Delight, and it never disappoints. The consistency in quality is impressive, and the flavors are always on point. The staff is courteous and ensures a pleasant dining experience. I highly recommend it for anyone craving delicious fast food. A solid 5-star rating!',
             'stars' => '5'
         ]);

@@ -104,26 +104,25 @@
         </section>
         <section class="review" id="review">
             <h1 class="heading"> Our Customers <span>Reviews</span></h1>
-            <div class="filter-menu">
-                <button class="filter-button" data-filter="all">
-                    <div class="filter-card">
-                        <p>All Stores</p>
+
+            <div class="our-locations">
+                <h1>Our Locations
+                    <div class="scroller">
+                        <span>
+                            @foreach ($branches as $branch)
+                                {{ $branch['address'] }}
+                                <br />
+                            @endforeach
+                        </span>
                     </div>
-                </button>
-                @foreach ($branches as $branch)
-                    <button class="filter-button" data-filter="{{ $branch->branch_id }}">
-                        <div class="filter-card">
-                            <p>{{ $branch->branch_name }}</p>
-                        </div>
-                    </button>
-                @endforeach
+                </h1>
             </div>
 
             <div class="box-container">
                 @foreach ($storereviews as $rev)
                     <div class="box" data-filter="{{ $rev->branch_id }}">
                         @if ($rev->image)
-                            <img src="{{ asset($rev->image) }}" alt="{{ $rev->name }}">
+                            <img src="{{ asset($rev['image']) }}" alt="{{ $rev->name }}">
                         @endif
                         <h3>{{ $rev->name }}</h3>
                         <div class="stars">
