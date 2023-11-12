@@ -24,7 +24,7 @@
                     bite.</p>
             </div>
             <img class="rounded-image" src="https://i.pinimg.com/564x/eb/af/22/ebaf22b531f72ee00f406c9e21e6920e.jpg"
-                alt="" style="margin-left: 20px">
+                alt="">
         </div>
 
         <div class="spacer"></div>
